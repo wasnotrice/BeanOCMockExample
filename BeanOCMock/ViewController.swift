@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Bean_iOS_OSX_SDK
 
 class ViewController: UIViewController {
 
