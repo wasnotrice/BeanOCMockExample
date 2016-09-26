@@ -29,45 +29,14 @@
   SOFTWARE.
 */
 
-/* ------------------------------------------------------------------------------------------------
- *                               Memory Attributes and Compiler Macros
- * ------------------------------------------------------------------------------------------------
+/*
+ Added manually, following instructions
+ here: https://punchthrough.com/bean/guides/building-an-app/v2-integrate-sdk/#step-2-edit-the-appmessagetypes-h-in-the-pods
+ and here: https://github.com/PunchThrough/Bean-iOS-OSX-SDK/issues/24#issuecomment-172148681
  */
-
-#ifndef APPMESSAGETYPES_H
-#define APPMESSAGETYPES_H
-
-
-/* ----------- IAR Compiler ----------- */
-#ifdef __IAR_SYSTEMS_ICC__
-
-typedef uint32 PTD_UINT32;
-typedef uint16 PTD_UINT16;
-typedef uint8 PTD_UINT8;
-typedef int8  PTD_INT8;
-typedef int16 PTD_INT16;
-
-/* ----------- Arduino ----------- */
-#elif __cplusplus
-
-typedef uint32_t PTD_UINT32;
-typedef uint16_t PTD_UINT16;
-typedef uint8_t  PTD_UINT8;
-typedef int8_t   PTD_INT8;
-typedef int16_t PTD_INT16;
-
-/* ----------- Objective-C ----------- */
-#elif __objectivec
-
 typedef UInt32 PTD_UINT32;
 typedef UInt16 PTD_UINT16;
 typedef UInt8  PTD_UINT8;
+// Added manually, not included in instructions above, but seems to be necessary
 typedef int8_t PTD_INT8;
 typedef SInt16 PTD_INT16;
-
-#else
-#error define a platform/language that you are building for
-#endif
-
-
-#endif
