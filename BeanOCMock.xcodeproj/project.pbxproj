@@ -12,6 +12,7 @@
 		0743AB981D9982BF007F22C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0743AB961D9982BF007F22C9 /* Main.storyboard */; };
 		0743AB9A1D9982BF007F22C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0743AB991D9982BF007F22C9 /* Assets.xcassets */; };
 		0743AB9D1D9982BF007F22C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0743AB9B1D9982BF007F22C9 /* LaunchScreen.storyboard */; };
+		82FEA64A7F21242443718966 /* Pods_BeanOCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0B5237690A31B4A54E4F03 /* Pods_BeanOCMock.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0743AB991D9982BF007F22C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0743AB9C1D9982BF007F22C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0743AB9E1D9982BF007F22C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B0B5237690A31B4A54E4F03 /* Pods_BeanOCMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeanOCMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E6D0E7A20E0DF82A939C13 /* Pods-BeanOCMock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeanOCMock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeanOCMock/Pods-BeanOCMock.debug.xcconfig"; sourceTree = "<group>"; };
+		47A26CD56BE3C232001FE08C /* Pods-BeanOCMock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeanOCMock.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeanOCMock/Pods-BeanOCMock.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82FEA64A7F21242443718966 /* Pods_BeanOCMock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0743AB911D9982BF007F22C9 /* BeanOCMock */,
 				0743AB901D9982BF007F22C9 /* Products */,
+				A2DB28E945978071956B44C5 /* Pods */,
+				37A6D48E09ACCE704FD2A495 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = BeanOCMock;
 			sourceTree = "<group>";
 		};
+		37A6D48E09ACCE704FD2A495 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B0B5237690A31B4A54E4F03 /* Pods_BeanOCMock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2DB28E945978071956B44C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40E6D0E7A20E0DF82A939C13 /* Pods-BeanOCMock.debug.xcconfig */,
+				47A26CD56BE3C232001FE08C /* Pods-BeanOCMock.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0743ABA11D9982BF007F22C9 /* Build configuration list for PBXNativeTarget "BeanOCMock" */;
 			buildPhases = (
+				09B5FEB846DF78673368EB32 /* [CP] Check Pods Manifest.lock */,
 				0743AB8B1D9982BF007F22C9 /* Sources */,
 				0743AB8C1D9982BF007F22C9 /* Frameworks */,
 				0743AB8D1D9982BF007F22C9 /* Resources */,
+				5003DC42E8A0C85FD4DB638A /* [CP] Embed Pods Frameworks */,
+				07D6A7248B3253FD99644AAB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07D6A7248B3253FD99644AAB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeanOCMock/Pods-BeanOCMock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09B5FEB846DF78673368EB32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5003DC42E8A0C85FD4DB638A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeanOCMock/Pods-BeanOCMock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0743AB8B1D9982BF007F22C9 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		0743ABA21D9982BF007F22C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40E6D0E7A20E0DF82A939C13 /* Pods-BeanOCMock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YLHWW5UT73;
@@ -272,6 +348,7 @@
 		};
 		0743ABA31D9982BF007F22C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47A26CD56BE3C232001FE08C /* Pods-BeanOCMock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YLHWW5UT73;
@@ -302,6 +379,7 @@
 				0743ABA31D9982BF007F22C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
